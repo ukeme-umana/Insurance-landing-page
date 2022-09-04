@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+}
+a {
+  color: hsl(228, 45%, 44%);
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4em;
+  height: 16vh;
+}
+.nav-list-wrapper {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0 2em;
+}
+.nav-list-wrapper li {
+  color: hsl(216, 30%, 68%);
+}
+.nav-list-wrapper li,
+.nav-list-wrapper li button {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.nav-btn {
+  border: 1px solid hsl(256, 26%, 20%);
+  background-color: white;
+  padding: 1em;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+}
+#burger {
+  display: none;
+}
+.burger-menu {
+  border: 1px solid hsl(256, 26%, 20%);
+  padding: 0.5px;
+}
+.burger-menu div {
+  width: 15px;
+  background-color: hsl(256, 26%, 20%);
+  margin: 5px;
+  height: 1px;
+}
+.burger-menu,
+.burger-menu div {
+  display: none;
+}
+.header-wrapper {
+  background-color: hsl(256, 26%, 20%);
+  color: white;
+  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  display: flex;
+}
+.header-people-img-wrapper {
+  position: relative;
+  top: 2em;
+}
+.header-people-img {
+  width: 400px;
+}
+.header-pattern-img {
+  width: 300px;
+}
+.header-text-wrapper {
+  padding-left: 4em;
+  padding-top: 4em;
+}
+.header-text-wrapper h1 {
+  font-size: 40px;
+  width: 300px;
+}
+.header-text-wrapper p {
+  font-size: 12px;
+  width: 400px;
+  margin-top: 1em;
+}
+.header-btn {
+  border: 1px solid hsl(216, 30%, 68%);
+  background-color: transparent;
+  padding: 1em;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-top: 1em;
+  width: 100px;
+}
+.header-btn:hover {
+  background-color: white;
+  color: hsl(256, 26%, 20%);
+}
+.left-bg-div {
+  position: relative;
+  bottom: 6em;
+}
+.bg-icon-left {
+  width: 150px;
+}
+.main-wrapper {
+  padding: 0 4em;
+  margin-top: -8em;
+}
+.main-header-text {
+  font-size: 40px;
+}
+.snappy-section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  margin-top: 3em;
+}
+.snappy-section-wrapper div h4,
+.snappy-section-wrapper div p {
+  margin-top: 1em;
+}
+.find-out-section {
+  margin-top: 6em;
+  background-color: hsl(256, 26%, 20%);
+  padding: 2em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.find-out-section h2 {
+  font-size: 40px;
+  width: 400px;
+}
+.find-out-section button {
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 1em;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+
+.find-out-section button:hover {
+  color: hsl(256, 26%, 20%);
+  background-color: white;
+}
+.logo-and-social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.social-icon-div {
+  display: flex;
+  gap: 1em;
+}
+.social-icon-div svg {
+  cursor: pointer;
+}
+.social-icon-div svg:hover #facebook,
+.social-icon-div svg:hover #twitter,
+.social-icon-div svg:hover #pinterest,
+.social-icon-div svg:hover #instagram {
+  fill: hsl(256, 26%, 20%);
+}
+.footer-wrapper {
+  padding: 2em 4em;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 4em;
+}
+.info-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-info-div h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: hsl(216, 30%, 68%);
+  font-weight: 100;
+  margin-top: 3em;
+}
+.footer-info-div ul {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.footer-info-div ul li {
+  margin: 1em 0;
+}
+@media screen and (max-width: 1000px) {
+  .header-text-wrapper h1 {
+    font-size: 30px;
+    width: 200px;
+  }
+  .header-text-wrapper p {
+    font-size: 12px;
+    width: 200px;
+  }
+  .header-wrapper {
+    gap: 1em;
+  }
+  .main-header-text {
+    font-size: 30px;
+  }
+  .find-out-section h2 {
+    font-size: 30px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header-wrapper {
+    flex-direction: column-reverse;
+  }
+  .burger-menu,
+  .burger-menu div {
+    display: block;
+  }
+  .nav-wrapper,
+  .main-wrapper {
+    padding: 0 1em;
+  }
+  .nav-list-wrapper {
+    position: absolute;
+    top: 16vh;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: hsl(256, 26%, 20%);
+    height: 84vh;
+    transition: all 0.5s;
+  }
+  .nav-list-wrapper li,
+  .nav-list-wrapper li button {
+    color: white;
+  }
+  .nav-list-wrapper li button {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  #burger:checked .nav-list-wrapper {
+    right: 0;
+  }
+  .header-people-img-wrapper {
+    position: static;
+    top: 0;
+  }
+  .header-people-img {
+    width: 100%;
+  }
+  .header-text-wrapper {
+    height: 84vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .header-text-wrapper h1 {
+    width: 100%;
+  }
+  .header-text-wrapper p {
+    width: 90%;
+  }
+  .main-header-text {
+    text-align: center;
+  }
+  .main-wrapper {
+    margin-top: -18em;
+  }
+  .snappy-section-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .snappy-section-wrapper div {
+    text-align: center;
+  }
+  .find-out-section {
+    flex-direction: column;
+  }
+  .find-out-section h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .find-out-section button {
+    margin-top: 1em;
+  }
+  .logo-and-social-icons {
+    flex-direction: column;
+  }
+  .logo-and-social-icons img {
+    margin-top: 2em;
+  }
+  .social-icon-div {
+    margin: 2em;
+  }
+  .info-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
